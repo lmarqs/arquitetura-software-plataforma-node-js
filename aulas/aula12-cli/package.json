@@ -1,14 +1,12 @@
 {
-  "name": "aula10-cli",
+  "name": "@arquitetura-software-plataforma-node/aula12",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
     "chalk": "^2.4.2"
-  }
+  },
+  "private": true
 }
