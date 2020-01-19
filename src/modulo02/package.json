@@ -1,9 +1,9 @@
 {
   "name": "@arquitetura-software-plataforma-node/modulo02",
   "version": "1.0.0",
-  "description": "",
+  "description": "Primeiros Projetos e Debugging",
   "main": "index.js",
-  "author": "",
+  "author": "lmarqs",
   "license": "UNLICENSED",
   "dependencies": {
     "chalk": "^2.4.2",
