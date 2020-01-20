@@ -15,9 +15,12 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
+app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap')))
+app.use('/jquery', express.static(path.join(__dirname, 'node_modules/jquery')))
+
 app.use('/', indexRouter)
 app.use('/echo', (req, res) => {
-  res.render('echo.ejs', { term: req.query.t })
+  res.render('pages/echo.ejs', { term: req.query.t })
 })
 
 app.use('/users', usersRouter)
