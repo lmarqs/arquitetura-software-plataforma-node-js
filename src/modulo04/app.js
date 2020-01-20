@@ -19,10 +19,12 @@ app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstra
 app.use('/jquery', express.static(path.join(__dirname, 'node_modules/jquery')))
 
 app.use('/', indexRouter)
+app.use('/users', usersRouter)
+
 app.use('/echo', (req, res) => {
   res.render('pages/echo.ejs', { term: req.query.t })
 })
 
-app.use('/users', usersRouter)
+app.use('*', (req, res) => res.render('pages/404.ejs'))
 
 module.exports = app
