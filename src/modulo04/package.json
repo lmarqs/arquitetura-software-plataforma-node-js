@@ -15,7 +15,7 @@
     "debug": "~2.6.9",
     "ejs": "^3.0.1",
     "express": "~4.16.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
